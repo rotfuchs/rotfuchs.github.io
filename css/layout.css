@@ -120,10 +120,18 @@ table {
 table th {
 	text-align: left;
 	padding-right: 15px;
+	font-size: 1em;
+}
+table td {
+	font-size: 1em;
 }
 
 ul {
 	padding: 0 0 25px 20px;
+}
+
+li {
+	font-size: 1em;
 }
 
 div.image.left {
