@@ -2,13 +2,14 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  	<meta charset="utf-8">
 
-  <title>Welcome - Markus Voss</title>
-  <meta name="author" content="Markus Voss">
+  	<title>Welcome - Markus Voss</title>
+  	<meta name="author" content="Markus Voss">
 
-  <link rel="stylesheet" href="css/layout.css?v=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+  	<link rel="stylesheet" href="css/layout.css?v=1.0">
+  	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<script type="text/javascript" src="js/qrcode.min.js"></script>
 </head>
 
 <body>
@@ -97,6 +98,17 @@
 			<p>
 				If you have any questions or feedback then write me in german or english. You can email me at <a href="mailto:kontakt@voss.dev">kontakt@voss.dev</a> or send me a message on <a href="https://github.com/rotfuchs">Github</a>. :)
 			</p>
+
+			<div id="qrcode"></div>
+			<script type="text/javascript">
+				new QRCode(document.getElementById("qrcode"), {
+					text: window.location.href,
+					width: 110,
+					height: 110,
+					colorDark : "#000000",
+					colorLight : "#ffffff",
+				});
+			</script>
 
 			<div class="used_colors">
 				<div class="color_scheme">

@@ -150,6 +150,12 @@ div.image.right {
 	margin: 0 0 0 10px;
 }
 
+#qrcode {
+	padding: 8px;
+	background-color: var(--background-link-color);
+	display: inline-block;
+}
+
 @media only screen and (max-width: 580px) {
 	div.image.right,
 	div.image.left {

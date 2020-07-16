@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="css/layout.css?v=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <script type="text/javascript" src="js/qrcode.min.js"></script>
 </head>
 
 <body>
@@ -118,6 +119,17 @@
             <a href="https://www.chefkoch.de/rezepte/472271140790423/Toskanischer-Haehnchen-Auflauf.html">toskanische Hähnchenauflauf</a>.
         </p>
 
+        <div id="qrcode"></div>
+        <script type="text/javascript">
+            new QRCode(document.getElementById("qrcode"), {
+                text: window.location.href,
+                width: 110,
+                height: 110,
+                colorDark : "#000000",
+                colorLight : "#ffffff",
+            });
+        </script>
+
         <div class="used_colors">
             <div class="color_scheme">
                 <div class="background-color"></div>
@@ -125,9 +137,10 @@
                 <div class="headline-color"></div>
                 <div class="link-color"></div>
                 <div class="border-color"></div>
-
             </div>
         </div>
+
+
 
     </div>
 </div>
